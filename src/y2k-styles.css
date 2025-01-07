@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --neon-pink: #ff1493;
+  --blue-accent: #00ffff;
+  --purple-main: #8a2be2;
+  --lime-green: #32cd32;
+  --tangerine: #ffa500;
+  --baby-blue: #89cff0;
+}
+
+body {
+  font-family: 'VT323', monospace;
+  background: linear-gradient(
+    to bottom right,
+    var(--purple-main),
+    var(--neon-pink)
+  );
+  color: white;
+}
+
+.y2k-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.y2k-logo {
+  font-size: 2.5rem;
+  color: var(--blue-accent);
+  text-shadow: 2px 2px var(--purple-main);
+}
+
+.y2k-nav-link {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.y2k-nav-link:hover {
+  color: var(--blue-accent);
+  transform: scale(1.1);
+}
+
+.y2k-button {
+  background-color: var(--blue-accent);
+  color: var(--purple-main);
+  border: 2px solid white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.y2k-button:hover {
+  background-color: white;
+  color: var(--purple-main);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.y2k-gradient-text {
+  background: linear-gradient(
+    45deg,
+    var(--neon-pink),
+    var(--blue-accent),
+    var(--lime-green)
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.y2k-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--blue-accent);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.y2k-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.y2k-card:hover {
+  transform: scale(1.05);
+}
+
+.y2k-star {
+  color: var(--neon-pink);
+  font-size: 1.5rem;
+}
+
+.pricing-section {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 105, 180, 0.15) 0%,
+    rgba(138, 43, 226, 0.15) 100%
+  );
+}
+
+.y2k-pricing-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--blue-accent);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.y2k-pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+}
+
+.y2k-pricing-card-pro {
+  border-color: var(--blue-accent);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .y2k-logo {
+    font-size: 2rem;
+  }
+  .y2k-nav-link {
+    font-size: 1.2rem;
+  }
+  .y2k-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
