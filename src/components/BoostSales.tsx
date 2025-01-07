@@ -7,7 +7,7 @@ const BoostSales: React.FC = () => {
     <section id="boost-sales" className="boost-sales-section py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center y2k-gradient-text">
-          Boost Your Beauty Biz with Pro Service Growth
+          Boost Your Beauty Business with Pro Service Growth
         </h2>
         <p className="text-2xl mb-12 text-center text-white">
           Elevate your online presence and skyrocket your bookings with our
